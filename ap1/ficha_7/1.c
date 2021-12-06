@@ -4,7 +4,7 @@ int fat1(int n);
 int fat2(int n, int f);
 
 void main(){
-    int n;
+    int n,f;
     printf("insira o inicio");
     scanf("%d",&n);
     printf("%d",fat1(n));
@@ -24,7 +24,7 @@ int fat2(int n,int f){
     f = n * f;
     n--;
     if (n > 0){
-    fat(n,f);
+    fat2(n,f);
     }else if (n == 0){
         return f;
     }
