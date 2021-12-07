@@ -1,18 +1,17 @@
 #include <stdio.h>
-int a,c;
-float b;
+int a,c,b=0;
 int soma(int a);
+
 void main(){
     printf("Nums plz");
     scanf("%d",&a);
-    soma(a);
+    printf("%d",soma(a));
 }
 
 int soma(int a){
-    b = 0;
-    while(a != 0){
     b = b + a;
-    a--;
-    printf("%f\n",b);
-}
+    if (a>0)
+    soma(a-1);
+    else
+    return b;
 }

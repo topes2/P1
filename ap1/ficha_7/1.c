@@ -19,7 +19,7 @@ int fat1(int n){
     }
     return f;
 }
-
+                                                            
 int fat2(int n,int f){
     f = n * f;
     n--;
